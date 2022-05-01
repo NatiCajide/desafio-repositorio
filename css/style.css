@@ -1,0 +1,553 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --clr-blue: #2052BB;
+    --clr-pink: #F7DFE2;
+    --clr-pink-b: #f2b4bb;
+    --clr-green: #50ABA2;
+    --clr-orange: #FF6602;
+    --clr-red: #BF2626;
+    --clr-off-white: #FAEFE6;
+    --clr-orange-logo: #FF6600;
+    --clr-orange-logo-light: #fb873a;
+}
+
+/*----------------------Header------------------*/
+
+.header-contenedor{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+}
+
+.header-logo{
+    width: 100px;
+    height: 100px;  
+}
+
+.elementos-encabezado{
+    width: 20px;
+}
+
+/*------------------------Nav--------------------*/
+
+.nav-menu{
+    display: flex;
+    justify-content:start;
+    list-style: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--clr-blue);
+    padding: 15px;
+}
+
+.nav-menu li{
+    margin-right: 30px;
+    margin-right: 30px;
+}
+
+.nav-menu li a:hover{
+    color: #FF6600;
+}
+
+.color-menu{
+    text-decoration: none;
+    color: var(--clr-off-white);
+    letter-spacing: 3px;
+}
+
+/*---------------------- Carrusel de Productos------------------*/
+
+.carrusel-productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-white);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.carrusel-productos img{  
+    width: 280px;
+    height: 280px;
+}
+
+/*-----------Sección de Acceso al Shop---------*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    column-gap: 60px;
+}
+
+.primer-item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: start;
+}
+.primer-item img{
+    width: 450px;
+    margin-top: 10px
+}
+
+.segundo-item{
+    margin-left: 35px;
+    letter-spacing: 2px;
+}
+
+.titulo-item{
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.parrafo-segundo-item{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.tercer-item{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-self: end;
+}
+
+.tercer-item img{
+    width: 450px;
+}
+
+.cuarto-item{
+    font-size: 20px;
+    margin-right: 35px;
+    margin-top: 20px;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+/*----------------------Nuevos Ingresos------------------*/
+
+.contenedor-titulo{
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--clr-blue);
+    color: white;
+}
+
+.contenedor-articulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-pink);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.imagen-producto{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nombre-articulo{
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    width: 300px;
+    text-align: center;
+    color: black;
+}
+
+.precio-articulo{
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 300px;
+    text-align: center;
+    color: var(--clr-red);
+}
+
+.ver-todos{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--clr-pink);
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 90px;
+}
+
+.ver-todos img{
+    width: 140px;
+    height: auto;
+}
+
+/*----------------------Carrusel Instagram------------------*/
+
+.carrusel-instagram-titulo{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 3px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--clr-blue);
+
+}
+.contenedor-carrusel{
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-instagram{
+    width: 355px;
+    height: 355px;
+}
+
+/*----------------------Enlace a YouTube------------------*/
+
+.youtube{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 100px;
+}
+
+/*----------------------Footer------------------*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--clr-blue);
+    letter-spacing: 2px;
+}
+
+.suscribirse-boton{
+    display: flex;
+    justify-content:center;
+    background-color:white;
+    color: black;
+    padding: 15px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footer-info-titulo{
+    
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+   
+}
+
+.footer-info{
+    font-size: 0.7rem;
+    margin-top: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+/*----------------------- Shop ----------------------*/
+
+.portada{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.main{
+    display: flex; 
+    justify-content: space-evenly;
+    
+}
+
+/* GRILLA */
+
+.grid-container-shop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 10px;
+
+}
+
+.grid-item-shop{
+    border: var(--clr-blue) dotted 1px;
+}
+
+.grid-item-shop img{
+    margin-top: 20px;
+}
+
+/* CATEGORÍA DE PRODUCTOS */ 
+
+.categorias{
+    list-style: none;
+    background-color: var(--clr-pink);
+    margin-top: 50px;
+    margin-bottom: 940px;
+    margin-right: 60px;
+    margin-left: 30px;
+    padding: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+
+.categorias ul{
+    list-style: none;
+}
+
+.subcategorias{
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.subcategoria-2{
+    color: var(--clr-red);
+    text-decoration: none;
+}
+
+.numeracion-paginas{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    list-style: none;
+    margin-left: 350px;
+    margin-right: 70px;
+}
+
+.numeracion-paginas li{
+    margin-left: 7px;
+}
+
+/*------------------------- Locales ------------------------*/
+
+.titulo-locales{
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    margin-left: 70px; 
+    margin-right: 180px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    padding: 15px;
+    letter-spacing: 3px;
+    background-color: var(--clr-pink);
+}
+
+.item-locales{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 100px;
+}
+
+.imagen-local{
+    width: 700px;
+    margin-left: 70px; 
+}
+
+.mapa{
+    width: 450px;
+    margin-left: 40px;
+}
+
+.parrafo-direccion{
+    margin-left: 40px;
+    margin-top: 15px;
+    color: var(--clr-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.parrafo-horario{
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/*------------------------- Quiénes Somos ------------------------*/
+
+.contenedor-imagenes-uno{
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+}
+
+.contenedor-imagenes-uno img{
+    width: 500px;
+    margin-left: 5px;
+}
+
+.cita{
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 80px;
+    margin-left: 380px;
+    margin-right: 380px;
+    margin-top: 10px;
+    text-align: center;
+    color:var(--clr-blue);
+}
+
+.pie-cita{
+    margin-top: 30px;
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.parrafo-quienes-somos{
+    margin-left: 220px;
+    margin-right: 220px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+.segundo-parrafo{
+    margin-top: 25px;
+}
+
+.contenedor-imagenes-dos {
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+    background-color: var(--clr-orange-logo-light);
+    padding: 100px;
+}
+
+.contenedor-imagenes-dos img{
+    width: 350px;
+    margin-left: 5px;
+}
+
+/*------------------------- Contacto ------------------------*/
+
+.titulo-contacto{
+    display: flex ;
+    justify-content: center;
+    margin-top:100px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nombre-mail{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 50px;
+}
+
+.nombre{
+    margin-right: 50px;
+    border: dotted var(--clr-blue) 1px;
+    padding: 10px;
+    padding-right: 250px;
+}
+.mail{
+    margin-left: 10px;
+    border: dotted var(--clr-blue) 1px;
+    padding: 10px;
+    padding-right: 300px;
+}
+
+.mensaje{
+    display: flex;
+    justify-content: start;
+    margin-left: 345px;
+    margin-right: 345px;
+    border: dotted var(--clr-blue) 1px;
+    padding-right: 300px;
+    padding: 10px;
+}
+
+.boton-enviar{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.boton-enviar img{
+    width: 100px;
+}
+
+
+/*--------------- Responsive ---------------*/
+
+/* MOBILE */
+@media(max-width:450px) {
+    .grid-container-shop{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+
+ 
+}
+
+
+
+/* TABLET */
+@media (min-width:451px) and (max-width:960px) {
+
+}
+
+
+
