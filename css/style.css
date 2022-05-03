@@ -82,8 +82,7 @@ html{
     justify-content: space-between;
     align-items: center;
     background-color: var(--clr-white);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 6px;
 }
 
 .carrusel-productos img{  
@@ -146,6 +145,42 @@ html{
     margin-top: 20px;
     line-height: 30px;
     letter-spacing: 2px;
+}
+/*----------------------Carrusel de Imagenes-------------*/
+
+.deslizador{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel li{
+    width: 100%;
+}
+
+.imagen-carrusel{
+    width: 100%;
+}
+
+.carrusel{
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    animation: carrusel 15s linear infinite alternate; 
+}
+
+@keyframes carrusel{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{  margin-left: -100%;}
+    45%{  margin-left: -100%;}
+
+    50%{  margin-left: -200%;}
+    70%{  margin-left: -200%;}
+
+    75%{  margin-left: -300%;}
+    100%{  margin-left: -300%;}
 }
 
 /*----------------------Nuevos Ingresos------------------*/
