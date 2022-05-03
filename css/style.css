@@ -362,6 +362,11 @@ html{
     border: var(--clr-blue) dotted 1px;
 }
 
+.imagen-producto:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
 .grid-item-shop img{
     margin-top: 20px;
 }
