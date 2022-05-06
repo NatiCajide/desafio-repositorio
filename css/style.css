@@ -29,7 +29,6 @@ html{
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
@@ -62,7 +61,6 @@ html{
 
 .nav-menu li{
     margin-right: 30px;
-    margin-right: 30px;
 }
 
 .nav-menu li a:hover{
@@ -74,6 +72,20 @@ html{
     color: var(--clr-off-white);
     letter-spacing: 3px;
 }
+
+/*------------------------Nav con Bootstrap--------------------*/
+
+.estilo-nav{
+    background-color: var(--clr-blue);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.formato{
+    margin-right: 30px;
+
+}
+
 
 /*---------------------- Carrusel de Productos------------------*/
 
