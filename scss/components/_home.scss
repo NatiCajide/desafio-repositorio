@@ -1,19 +1,40 @@
 @import '../base/listas';
 
-/*---------------------- Carrusel de Productos------------------*/
+/*----------------------Carrusel de Imagenes-------------*/
 
-.carrusel-productos{
+.deslizador{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagen-carrusel{
+    width: 100%;
+}
+
+.carrusel{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: nth($colores, 7);
-    padding-bottom: 6px;
-    img{  
-        width: 280px;
-        height: 280px;
+    padding: 0px;
+    width: 400%;
+    animation: carrusel 15s linear infinite alternate; 
+    li{
+        width: 100%;
     }
 }
 
+@keyframes carrusel{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{  margin-left: -100%;}
+    45%{  margin-left: -100%;}
+
+    50%{  margin-left: -200%;}
+    70%{  margin-left: -200%;}
+
+    75%{  margin-left: -300%;}
+    100%{  margin-left: -300%;}
+}
 
 /*-----------Sección de Acceso al Shop---------*/
 
@@ -26,7 +47,6 @@
     margin-left: 200px;
     margin-right: 200px;
     column-gap: 60px;
-    border: nth($colores, 1) dotted 3px;
 }
 
 .primer-item{
@@ -76,65 +96,79 @@
     .grid-container{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         margin-top: 100px;
         margin-bottom: 70px;
         margin-left: 120px;
         margin-right: 120px;
         column-gap: 35px;
-        border: nth($colores, 1) dotted 2px;
     }
 }
 
-/*----------------------Carrusel de Imagenes-------------*/
-
-.deslizador{
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+@media screen and (min-width:451px) and (max-width: 960px){
+    .grid-container{
+        column-gap: 50px;
+    }
 }
 
-.imagen-carrusel{
-    width: 100%;
-}
+/*---------------------- Carrusel de Productos------------------*/
 
-.carrusel{
+.carrusel-productos{
     display: flex;
-    padding: 0px;
-    width: 400%;
-    animation: carrusel 15s linear infinite alternate; 
-    li{
-        width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 6px;
+    img{  
+        width: 280px;
+        height: 280px;
     }
 }
 
-@keyframes carrusel{
-    0%{ margin-left: 0;}
-    20%{ margin-left: 0;}
+@media only screen and (max-width:450px) {
+    .carrusel-productos{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 4px;
+        img{  
+            width: 300px;
+            height: 300px;
+            margin-bottom: 6px;
+        }
+    }
+}
 
-    25%{  margin-left: -100%;}
-    45%{  margin-left: -100%;}
-
-    50%{  margin-left: -200%;}
-    70%{  margin-left: -200%;}
-
-    75%{  margin-left: -300%;}
-    100%{  margin-left: -300%;}
+@media screen and (min-width:451px) and (max-width: 960px){
+    .carrusel-productos{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 10px;
+        margin-left: 10px;
+        img{  
+            width: 265px;
+            height: 265px;
+            margin-bottom: 15px;
+        }
+    }
+    .imagen-accesorios{
+        display: none;
+    }
 }
 
 /*----------------------Nuevos Ingresos------------------*/
 
 .contenedor-titulo{
-    font-size: nth($font-size, 5);
-    font-weight: nth($font-weight, 2);
-    letter-spacing: nth($letter-spacing, 3);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    letter-spacing: nth($letter-spacing, 3);
     background-color: nth($colores, 1);
     color: white;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    h4{
+        font-size: nth($font-size, 4);
+        font-weight: nth($font-weight, 5);
+    }
 }
 
 .contenedor-articulos{
@@ -161,8 +195,6 @@
     letter-spacing: nth($letter-spacing, 2);
     margin-top: 20px;
     margin-bottom: 0px;
-    margin-left: 20px;
-    width: 300px;
     text-align: center;
     color: black;
 }
@@ -171,10 +203,6 @@
     font-size: nth($font-size, 2);
     font-weight: nth($font-weight, 3);
     letter-spacing: nth($letter-spacing, 2);
-    margin-top: 5px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    width: 300px;
     text-align: center;
     color: nth($colores, 6);
 }
@@ -194,15 +222,44 @@
     }
 }
 
+@media only screen and (max-width:450px) {
+    .contenedor-articulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-producto{
+        
+        width: 180px;
+        height: auto;
+    
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 960px){
+    .contenedor-articulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen-producto{
+        width: 400px;
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        
+    }
+}
+
 /*----------------------Carrusel Instagram------------------*/
 
-.carrusel-instagram-titulo{
+.carrusel-titulo{
     display: flex;
     justify-content: center;
     letter-spacing: nth($letter-spacing, 3);
-    padding: 20px;
+    margin-top: 13px;
     font-weight: nth($font-weight, 4);
-    font-size: nth($font-size, 2)m;
+    font-size: nth($font-size, 2);
     text-align: center;
     color: nth($colores, 1);
 
@@ -210,11 +267,32 @@
 .contenedor-carrusel{
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.carrusel-instagram{
+.item-carrusel{
     width: 355px;
     height: 355px;
+}
+
+@media only screen and (max-width:450px) {
+    .contenedor-carrusel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item-carrusel{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 960px){
+    .item-carrusel{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 /*----------------------Enlace a YouTube------------------*/
@@ -227,3 +305,17 @@
     padding: 100px;
 }
 
+@media only screen and (max-width:450px) {
+    .youtube{
+       display:none;
+    }
+}
+
+@media screen and (min-width:451px) and (max-width: 960px){
+    .youtube{
+        display: flex;
+        justify-content: center;
+        padding: 80px;
+
+    }
+}
