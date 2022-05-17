@@ -1,0 +1,49 @@
+@import '../base/variables';
+@import '../base/listas';
+
+/*------------------------- Locales ------------------------*/
+
+.titulo-locales{
+    font-size: nth($font-size, 9);
+    font-weight: nth($font-weight, 6);
+    color: white;
+    margin-left: 70px; 
+    margin-right: 180px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    padding: 15px;
+    letter-spacing: nth($letter-spacing, 3);
+    background-color: nth($colores, 2);
+}
+
+.item-locales{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 100px;
+}
+
+.imagen-local{
+    width: 700px;
+    margin-left: 70px; 
+}
+
+.mapa{
+    width: 450px;
+    margin-left: 40px;
+}
+
+.parrafo-direccion{
+    margin-left: 40px;
+    margin-top: 15px;
+    color: nth($colores, 1);
+    font-weight: nth($font-weight, 4);
+    font-size: nth($font-size, 3);
+    letter-spacing: nth($letter-spacing, 3);
+}
+
+.parrafo-horario{
+    font-size: nth($font-size, 8);
+    font-weight: nth($font-weight, 1);
+    margin-left: 40px;
+    margin-top: 5px;
+}

@@ -1,0 +1,56 @@
+@import '../base/variables';
+@import '../base/listas';
+
+/*------------------------- Quiénes Somos ------------------------*/
+
+.contenedor-imagenes-uno{
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+    img{
+        width: 500px;
+        margin-left: 5px;
+    }
+}
+
+.cita{
+    letter-spacing: nth($letter-spacing, 2);
+    font-size: nth($font-size, 9);
+    padding: 80px;
+    margin-left: 380px;
+    margin-right: 380px;
+    margin-top: 10px;
+    text-align: center;
+    color: nth($colores, 1);
+}
+
+.pie-cita{
+    margin-top: 30px;
+    letter-spacing: nth($letter-spacing, 1);
+    font-size: nth($font-size, 7);
+    text-align: center;
+}
+
+.parrafo-quienes-somos{
+    margin-left: 220px;
+    margin-right: 220px;
+    text-align: center;
+    letter-spacing: nth($letter-spacing, 1);
+    line-height: $line-height;
+}
+
+.segundo-parrafo{
+    margin-top: 25px;
+}
+
+.contenedor-imagenes-dos {
+    display: flex;
+    justify-content: center;
+    margin-top:100px;
+    background-color: nth($colores, 9);
+    padding: 100px;
+    img{
+        width: 350px;
+        margin-left: 5px;
+    }
+}

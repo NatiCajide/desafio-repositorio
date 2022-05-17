@@ -1,0 +1,229 @@
+@import '../base/listas';
+
+/*---------------------- Carrusel de Productos------------------*/
+
+.carrusel-productos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: nth($colores, 7);
+    padding-bottom: 6px;
+    img{  
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+/*-----------Sección de Acceso al Shop---------*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    column-gap: 60px;
+    border: nth($colores, 1) dotted 3px;
+}
+
+.primer-item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-self: start;
+    img{
+        width: 450px;
+        margin-top: 10px
+    }
+}
+
+.segundo-item{
+    margin-left: 35px;
+    letter-spacing: nth($letter-spacing, 2);
+}
+
+.titulo-item{
+    font-weight: nth($font-weight, 6);
+    font-size: nth($font-size, 11);
+}
+
+.parrafo-segundo-item{
+    font-size: nth($font-size, 9);
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.tercer-item{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-self: end;
+    img{
+        width: 450px;
+    }
+}
+
+.cuarto-item{
+    font-size: nth($font-size, 9);
+    margin-right: 35px;
+    margin-top: 20px;
+    line-height: 30px;
+    letter-spacing: nth($letter-spacing, 2);
+}
+
+@media only screen and (max-width:450px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 100px;
+        margin-bottom: 70px;
+        margin-left: 120px;
+        margin-right: 120px;
+        column-gap: 35px;
+        border: nth($colores, 1) dotted 2px;
+    }
+}
+
+/*----------------------Carrusel de Imagenes-------------*/
+
+.deslizador{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.imagen-carrusel{
+    width: 100%;
+}
+
+.carrusel{
+    display: flex;
+    padding: 0px;
+    width: 400%;
+    animation: carrusel 15s linear infinite alternate; 
+    li{
+        width: 100%;
+    }
+}
+
+@keyframes carrusel{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{  margin-left: -100%;}
+    45%{  margin-left: -100%;}
+
+    50%{  margin-left: -200%;}
+    70%{  margin-left: -200%;}
+
+    75%{  margin-left: -300%;}
+    100%{  margin-left: -300%;}
+}
+
+/*----------------------Nuevos Ingresos------------------*/
+
+.contenedor-titulo{
+    font-size: nth($font-size, 5);
+    font-weight: nth($font-weight, 2);
+    letter-spacing: nth($letter-spacing, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: nth($colores, 1);
+    color: white;
+}
+
+.contenedor-articulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: nth($colores, 2);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: nth($font-size, 2);
+}
+
+.imagen-producto{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.nombre-articulo{
+    font-size: nth($font-size, 3);
+    font-weight: nth($font-weight, 5);
+    letter-spacing: nth($letter-spacing, 2);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    width: 300px;
+    text-align: center;
+    color: black;
+}
+
+.precio-articulo{
+    font-size: nth($font-size, 2);
+    font-weight: nth($font-weight, 3);
+    letter-spacing: nth($letter-spacing, 2);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 300px;
+    text-align: center;
+    color: nth($colores, 6);
+}
+
+.ver-todos{
+    font-weight: nth($font-weight, 4);
+    font-size: nth($font-size, 4);
+    text-align: center;
+    background-color: nth($colores, 2);
+    letter-spacing: nth($letter-spacing, 2);
+    color: white;
+    text-decoration: none;
+    padding-bottom: 90px;
+    img{
+        width: 140px;
+        height: auto;
+    }
+}
+
+/*----------------------Carrusel Instagram------------------*/
+
+.carrusel-instagram-titulo{
+    display: flex;
+    justify-content: center;
+    letter-spacing: nth($letter-spacing, 3);
+    padding: 20px;
+    font-weight: nth($font-weight, 4);
+    font-size: nth($font-size, 2)m;
+    text-align: center;
+    color: nth($colores, 1);
+
+}
+.contenedor-carrusel{
+    display: flex;
+    justify-content: center;
+}
+
+.carrusel-instagram{
+    width: 355px;
+    height: 355px;
+}
+
+/*----------------------Enlace a YouTube------------------*/
+
+.youtube{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 100px;
+}
+

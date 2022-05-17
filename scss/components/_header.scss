@@ -1,0 +1,49 @@
+@import '../base/variables';
+@import '../base/listas';
+
+.header-contenedor{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    background-color: white;
+}
+
+.header-logo{
+    width: 100px;
+    height: 100px;  
+}
+
+.elementos-encabezado{
+    width: 20px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content:start;
+    list-style: none;
+    font-size: nth($font-size, 2);
+    font-weight: nth($font-weight, 5);
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+    background-color: nth($colores, 1);
+    padding: 15px;
+    li{
+        margin-right: 30px;
+        margin-right: 30px;
+    }
+    li a:hover{
+        color: nth($colores, 5);
+    }
+}
+
+.color-menu{
+    text-decoration: none;
+    color: nth($colores, 7);
+    letter-spacing: 3px;
+}
