@@ -1,0 +1,14 @@
+//Mixin
+
+@mixin flexbox ($displayflex, $justify, $align){
+    display: $displayflex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex ($displayflex, $justify){
+    display: $displayflex;
+    justify-content: $justify;
+}
+
+

@@ -4,8 +4,7 @@
 /*------------------------- Contacto ------------------------*/
 
 .titulo-contacto{
-    display: flex ;
-    justify-content: center;
+    @extend %flex;
     margin-top:100px;
     margin-bottom: 50px;
     font-size: nth($font-size, 10);
@@ -13,37 +12,34 @@
 }
 
 .nombre-mail{
-   display: flex;
-   justify-content: center;
-   margin-bottom: 50px;
+    @include flex (flex, center);
+    margin-bottom: 50px;
 }
 
 .nombre{
     margin-right: 50px;
     border: dotted nth($colores, 1) 1px;
-    padding: 10px;
+    padding: $padding;
     padding-right: 250px;
 }
 .mail{
     margin-left: 10px;
     border: dotted nth($colores, 1) 1px;
-    padding: 10px;
+    padding: $padding;
     padding-right: 300px;
 }
 
 .mensaje{
-    display: flex;
-    justify-content: start;
+    @include flex (flex, start);
     margin-left: 345px;
     margin-right: 345px;
     border: dotted nth($colores, 1) 1px;
     padding-right: 300px;
-    padding: 10px;
+    padding: $padding;
 }
 
 .boton-enviar{
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center);
     margin-top: 100px;
     margin-bottom: 100px;
 }

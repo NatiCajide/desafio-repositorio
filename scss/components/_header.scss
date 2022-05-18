@@ -2,13 +2,11 @@
 @import '../base/listas';
 
 .header-contenedor{
+    @include flexbox (flex, space-between, center);
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     text-decoration: none;
     background-color: white;
 }
@@ -23,13 +21,12 @@
 }
 
 .nav-menu{
-    display: flex;
-    justify-content:start;
+    @include flex (flex, start);
     list-style: none;
     font-size: nth($font-size, 2);
     font-weight: nth($font-weight, 5);
     text-transform: uppercase;
-    list-style: none;
+    list-style: $list-style;
     text-decoration: none;
     background-color: nth($colores, 1);
     padding: 15px;

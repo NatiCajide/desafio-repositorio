@@ -17,8 +17,7 @@
 }
 
 .item-locales{
-    display: flex;
-    justify-content: start;
+    @include flex (flex, start);
     margin-bottom: 100px;
 }
 
@@ -29,11 +28,11 @@
 
 .mapa{
     width: 450px;
-    margin-left: 40px;
+    margin-left: $margin-left;
 }
 
 .parrafo-direccion{
-    margin-left: 40px;
+    margin-left: $margin-left;
     margin-top: 15px;
     color: nth($colores, 1);
     font-weight: nth($font-weight, 4);
@@ -44,6 +43,6 @@
 .parrafo-horario{
     font-size: nth($font-size, 8);
     font-weight: nth($font-weight, 1);
-    margin-left: 40px;
+    margin-left: $margin-left;
     margin-top: 5px;
 }
