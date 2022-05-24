@@ -43,3 +43,29 @@
     line-height: $line-height;
 
 }
+/* Media Queries para MOBILE */
+@media only screen and (max-width: 513px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-info-titulo{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .footer-info p{
+        margin-bottom: 10px;
+
+    }
+
+}
+
+/* Media Queries TABLET */
+@media only screen and (min-width: 514px) and (max-width:960px){
+  
+}
+
+/* Media Queries DESKTOP */
+@media only screen and (min-width: 961px){
+  
+
+} 

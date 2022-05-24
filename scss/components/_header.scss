@@ -21,7 +21,7 @@
 }
 
 .nav-menu{
-    @include flex (flex, start);
+    @include flexbox (flex, start, center);
     list-style: none;
     font-size: nth($font-size, 2);
     font-weight: nth($font-weight, 5);
@@ -31,7 +31,6 @@
     background-color: nth($colores, 1);
     padding: 15px;
     li{
-        margin-right: 30px;
         margin-right: 30px;
     }
     li a:hover{
@@ -43,4 +42,49 @@
     text-decoration: none;
     color: nth($colores, 7);
     letter-spacing: 3px;
+
 }
+
+/*--------- Media Queries para MOBILE ---------*/
+
+@media only screen and (max-width: 513px){
+    
+    .titulo-mobile {
+        font-size: nth($font-size, 2);
+        font-weight: nth($font-weight, 5);
+        text-transform: uppercase;
+        color: nth($colores, 7);
+        letter-spacing: 3px;
+        line-height: 22px;
+        margin-left: 20px;
+    }
+    .color-menu{
+        display: none;
+    }
+    .navbar{
+        font-family: 'Raleway', sans-serif;
+    }
+    
+}
+
+/*--------- Media Queries TABLET ---------*/
+
+@media only screen and (min-width: 514px) and (max-width:960px){
+    .navbar{
+        display: none;
+    }
+    .titulo-mobile{
+        display:none;
+    }
+}
+
+/* Media Queries DESKTOP */
+@media only screen and (min-width: 961px){
+    .titulo-mobile{
+        display:none;
+    }
+    .navbar{
+        display: none;
+    }
+}    
+
