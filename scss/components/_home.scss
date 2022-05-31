@@ -59,7 +59,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     margin-left: 200px;
     margin-right: 200px;
     column-gap: 50px;
@@ -174,9 +174,8 @@
             font-size: nth($font-size, 3);
             line-height: 27px;
             letter-spacing: nth($letter-spacing, 2);
-            margin-right: 50px;
-            margin-left: 50px;
-            margin-bottom: 30px;
+            padding: 100px;
+            margin-top: 0px;
         }
         @media only screen and (min-width: 514px) and (max-width: 960px){
             font-size: nth($font-size, 3);
@@ -190,7 +189,6 @@
             margin-left: 0px;
             margin-right: 0px;
         }
-            
     }
 
     @media only screen and (max-width: 513px){

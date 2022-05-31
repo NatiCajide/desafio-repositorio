@@ -80,7 +80,7 @@
                 background-color: white;
                 padding: 10px;;
                 @media only screen and (min-width: 850px) and (max-width:919px){
-                    width: 450px;
+                    width: 400px;
                 }
                 @media only screen and (min-width: 750px) and (max-width:849px){
                     width: 350px;
@@ -91,12 +91,15 @@
                 @media only screen and (min-width: 500px) and (max-width:699px){
                     width: 400px;
                 }
-                @media only screen and (min-width: 300px) and (max-width:499px){
-                    width: 350px;
+                @media only screen and (min-width: 400px) and (max-width:499px){
+                    width: 180px;
+                    margin-left: 50px;
 
                 }
-                
-            
+                @media only screen and (min-width: 300px) and (max-width:399px){
+                    width: 140px;
+                    margin-left: 20px;
+                }
             }
             .imagen-producto:hover{
                 transform: scale(1.1);
@@ -118,8 +121,8 @@
                 letter-spacing: nth($letter-spacing, 2);
                 text-align: center;
                 color: nth($colores, 6);
-            
             }
+        
             @media only screen and (min-width: 300px) and (max-width:749px){
                 margin-left:60px;
                 margin-bottom: 0px;
@@ -133,15 +136,18 @@
         @media only screen and (min-width: 300px) and (max-width:919px){
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            
         }
       
     }
     @media only screen and (min-width: 300px) and (max-width:699px){
         display:flex;
         flex-direction: column;
-        
+        justify-content: center;
     }
+    @media only screen and (min-width: 0px) and (max-width:299px){
+        display: none;
+    }
+    
 }
 .numeracion-paginas{
     @include flex (flex, center);

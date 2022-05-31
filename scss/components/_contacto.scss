@@ -27,6 +27,10 @@
             margin-left: 150px;
             margin-right: 150px;
         }
+        @media only screen and (min-width: 300px) and (max-width:513px){
+            margin-left: 20px;
+            margin-right: 20px;
+        }
     }
     .mail{
         @include flex (flex, start);
@@ -42,6 +46,10 @@
         @media only screen and (min-width: 514px) and (max-width:900px){
             margin-left: 150px;
             margin-right: 150px;
+        }
+        @media only screen and (min-width: 300px) and (max-width:513px){
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
     .mensaje{
@@ -60,6 +68,10 @@
         @media only screen and (min-width: 514px) and (max-width:900px){
             margin-left: 150px;
             margin-right: 150px;
+        }
+        @media only screen and (min-width: 300px) and (max-width:513px){
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
     .boton-enviar{
