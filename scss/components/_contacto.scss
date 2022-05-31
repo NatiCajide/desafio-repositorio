@@ -3,47 +3,72 @@
 
 /*------------------------- Contacto ------------------------*/
 
-.titulo-contacto{
-    @extend %flex;
-    margin-top:100px;
-    margin-bottom: 50px;
-    font-size: nth($font-size, 10);
-    font-weight: nth($font-weight, 5);
-}
 
-.nombre-mail{
-    @include flex (flex, center);
-    margin-bottom: 50px;
-}
-
-.nombre{
-    margin-right: 50px;
-    border: dotted nth($colores, 1) 1px;
-    padding: $padding;
-    padding-right: 250px;
-}
-.mail{
-    margin-left: 10px;
-    border: dotted nth($colores, 1) 1px;
-    padding: $padding;
-    padding-right: 300px;
-}
-
-.mensaje{
-    @include flex (flex, start);
-    margin-left: 345px;
-    margin-right: 345px;
-    border: dotted nth($colores, 1) 1px;
-    padding-right: 300px;
-    padding: $padding;
-}
-
-.boton-enviar{
-    @include flex (flex, center);
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.boton-enviar img{
-    width: 100px;
+.formulario-contacto{
+    .titulo-contacto{ /* CONTACTANOS*/
+        @extend %flex;
+        margin-top:100px;
+        margin-bottom: 50px;
+        font-size: nth($font-size, 10);
+        font-weight: nth($font-weight, 5);
+    }
+    .nombre{
+        @include flex (flex, start);
+        margin-bottom: 20px;
+        margin-left: 350px;
+        margin-right: 350px;
+        padding: 10px;
+        border: dotted nth($colores, 1) 1px;
+        @media only screen and (max-width: 513px){
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+        @media only screen and (min-width: 514px) and (max-width:900px){
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    }
+    .mail{
+        @include flex (flex, start);
+        margin-bottom: 20px;
+        margin-left: 350px;
+        margin-right: 350px;
+        padding: 10px;
+        border: dotted nth($colores, 1) 1px;
+        @media only screen and (max-width: 513px){
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+        @media only screen and (min-width: 514px) and (max-width:900px){
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    }
+    .mensaje{
+        @include flex (flex, start);
+        margin-bottom: 20px;
+        margin-left: 350px;
+        margin-right: 350px;
+        padding-bottom: 150px;
+        padding-left: 10px;
+        padding-top: 10px;
+        border: dotted nth($colores, 1) 1px;
+        @media only screen and (max-width: 513px){
+            margin-left: 90px;
+            margin-right: 90px;
+        }
+        @media only screen and (min-width: 514px) and (max-width:900px){
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    }
+    .boton-enviar{
+        @include flex (flex, center);
+        margin-top: 100px;
+        margin-bottom: 100px;
+        img{
+            width: 100px;
+        }
+    }
+   
 }

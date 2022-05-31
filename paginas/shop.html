@@ -17,6 +17,31 @@
 </head>
 <body>
     <header>
+        <!-------NavBar MOBILE Bootstrap------>
+        <nav class="navbar navbar-expand-lg bg-light navbar-bootstrap">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">HOME</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas/shop.html">SHOP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/locales.html">LOCALES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/quienes-somos.html">QUIENES SOMOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./paginas/contacto.html">CONTACTO</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <!------------Comienzo del Header--------->
         <div class="header-contenedor">
             <h1>
@@ -39,6 +64,7 @@
         <!------------Comienzo del Nav--------->
         <nav>
             <ul class="nav-menu">
+                <div class="titulo-mobile">Envíos gratis a todo el país</div>
                 <li>
                     <a href="../index.html" class="color-menu">Home</a>
                 </li>
@@ -54,48 +80,46 @@
                 </li>
             </ul>
         </nav>
+            <!------------------- Shop -------------------->
         <section>
-            <div>
-                <img src="../assets/imagenes/portada-2.png"  class="portada" alt="Portada del Shop YKRA">
+            <div class="portada">
+                <img src="../assets/imagenes/portada-2.png" alt="Portada del Shop YKRA">
+            </div>
+            <div class="portada-mobile">
+                <img src="../assets/imagenes/portada-3.png" alt="Portada del Shop YKRA">
             </div>
         </section>
     </header>
-    <!----------------Comienzo del Main------------------>
-    <main class="main">
-        <section class="categorias">
-            <div>
-                <img src="../assets/imagenes/lupa.png" class="elementos-encabezado" alt="Lupa/Buscador">
-            </div>
-            <div>
-                <ul>
-                    <li class="subcategorias">CATEGORÍA DE PRODUCTOS</li>
-                    <li>
-                        <a href="mochilas.html" class="subcategoria-2">Mochilas</a> 
-                    </li>
-                    <li>  
-                        <a href="bolsos.html" class="subcategoria-2">Bolsos</a>
-                    </li>
-                    <li>
-                        <a href="rinoneras.html" class="subcategoria-2">Riñoneras</a>
-                    </li>
-                    <li>
-                        <a href="accesorios.html" class="subcategoria-2">Gorros</a>
-                    </li>
-                    <li>
-                        <a href="nuevos-ingresos.html" class="subcategoria-2">Nuevos Ingresos</a>
-                    </li>
-                    <li>
-                        <a href="sale.html" class="subcategoria-2">Sale</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="subcategorias">FILTRAR</li>
-                    <li class="subcategoria-2">Precio</li>
-                    <li class="subcategoria-2">Color</li>
-                    <li class="subcategoria-2">Tamaño</li>
-                </ul>
-            </div>
-        </section> 
+    <main class="shop">
+        <div class="categorias">
+            <ul>
+                <li class="subcategorias">CATEGORÍA DE PRODUCTOS</li>
+                <li>
+                    <a href="mochilas.html" class="subcategoria-2">Mochilas</a> 
+                </li>
+                <li>  
+                    <a href="bolsos.html" class="subcategoria-2">Bolsos</a>
+                </li>
+                <li>
+                     <a href="rinoneras.html" class="subcategoria-2">Riñoneras</a>
+                </li>
+                <li>
+                    <a href="accesorios.html" class="subcategoria-2">Gorros</a>
+                </li>
+                <li>
+                    <a href="nuevos-ingresos.html" class="subcategoria-2">Nuevos Ingresos</a>
+                </li>
+                <li>
+                     <a href="sale.html" class="subcategoria-2">Sale</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="subcategorias">FILTRAR</li>
+                <li class="subcategoria-2">Precio</li>
+                <li class="subcategoria-2">Color</li>
+                <li class="subcategoria-2">Tamaño</li>
+            </ul>
+        </div>
         <section class="grid-container-shop">
             <div class="grid-item-shop">
                 <img src="../assets/imagenes/mochila-1.jpg" class="imagen-producto" alt="Modelo Elsa YKRA">

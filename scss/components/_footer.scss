@@ -10,62 +10,50 @@
     padding-bottom: 60px;
     background-color: nth($colores, 1);
     letter-spacing: nth($letter-spacing, 2);
-}
+    .footer-info-titulo{
+        font-weight: nth($font-weight, 5);
+        font-size: nth($font-size, 3);
+        letter-spacing: nth($letter-spacing, 3);
+        margin-bottom: 10px;
+        color: black;
+        @media only screen and (max-width: 513px){
+            margin-top:40px;
+        }
+    }
+    .footer-info{
+        font-size: nth($font-size, 2);
+        font-weight: nth($font-weight, 2);
+        margin-top: 2px;
+        color: white;
+        text-decoration: none;
+        line-height: $line-height;
 
-.suscribirse-boton{
-    @include flex (flex, center);
-    background-color: map-get($boton, bg-boton);
-    color: map-get($boton, color-text);
-    padding: 15px;
-    font-weight: nth($font-weight, 5);
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-top: 20px;
-    font-size: nth($font-size, 6);
-    text-decoration: none;
-}
-
-.footer-info-titulo{
-    font-weight: nth($font-weight, 5);
-    font-size: nth($font-size, 3);
-    text-decoration: none;
-    letter-spacing: nth($letter-spacing, 3);
-    margin-bottom: 10px;
-    color: black;
-}
-
-.footer-info{
-    font-size: nth($font-size, 2);
-    font-weight: nth($font-weight, 3);
-    margin-top: 2px;
-    color: white;
-    text-decoration: none;
-    line-height: $line-height;
-
-}
-/* Media Queries para MOBILE */
-@media only screen and (max-width: 513px){
-    .footer{
+    }
+ 
+    .suscribirse-boton{
+        @include flex (flex, center);
+        background-color: map-get($boton, bg-boton);
+        color: map-get($boton, color-text);
+        padding: 15px;
+        font-weight: nth($font-weight, 5);
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 20px;
+        font-size: nth($font-size, 6);
+        text-decoration: none;
+        @media only screen and (max-width: 513px){
+            margin-left:0px;
+        }
+        @media only screen and (min-width: 514px) and (max-width: 960px){
+            margin-left:0px;
+            margin-right:350px;
+        }    
+    }
+    @media only screen and (max-width: 513px){
         flex-direction: column;
     }
-    .footer-info-titulo{
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-    .footer-info p{
-        margin-bottom: 10px;
-
-    }
-
+    @media only screen and (min-width: 514px) and (max-width: 960px){
+        flex-direction: column;
+    }       
 }
 
-/* Media Queries TABLET */
-@media only screen and (min-width: 514px) and (max-width:960px){
-  
-}
-
-/* Media Queries DESKTOP */
-@media only screen and (min-width: 961px){
-  
-
-} 
