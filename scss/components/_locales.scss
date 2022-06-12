@@ -3,100 +3,167 @@
 
 
 /*------------------------- Locales ------------------------*/
-
-.contenedor-locales{
-    margin-bottom: 150px;
-}
-.titulo-locales{
-    font-size: nth($font-size, 9);
-    font-weight: nth($font-weight, 6);
-    color: white;
-    margin-left: 55px; 
-    margin-right: 180px;
-    margin-top: 60px;
-    margin-bottom: 15px;
-    padding: 15px;
-    letter-spacing: nth($letter-spacing, 3);
-    color: nth($colores, 1);
-    @media only screen and (max-width: 513px){
-        margin-left: 50px; 
-        margin-right: 50px;
-        margin-top: 50px;
-    }
-    @media only screen and (min-width: 514px) and (max-width: 960px){
-        margin-left: 70px; 
-        margin-right: 60px;
-        margin-top: 50px;
-    }
-}
-
-.item-locales{
-    @include flex (flex, start);
-    margin-bottom: 10px;
-    .imagen-local{
-        width: 700px;
-        margin-left: 70px; 
-        @media only screen and (max-width: 513px){
-        width: 400px;
-        margin-left: 50px;
-        margin-bottom: 20px;
-        }
-        @media only screen and (min-width: 514px) and (max-width: 960px){
-        width: 650px;
-        margin-left: 70px;
-        margin-bottom: 20px;
-        }
-    }
-    .mapa{
-        width: 450px;
-        margin-left: $margin-left;
-        @media only screen and (max-width: 513px){
-            width: 400px;
-            margin-left: 50px; 
-        }
-        @media only screen and (min-width: 514px) and (max-width: 960px){
-            width: 650px;
-            margin-left: 70px;
-            margin-bottom: 20px;
-            }
-    }
-    .parrafo-direccion{
-        margin-left: $margin-left;
-        margin-top: 15px;
-        color: nth($colores, 1);
-        font-weight: nth($font-weight, 4);
-        font-size: nth($font-size, 3);
-        letter-spacing: nth($letter-spacing, 3);
-        @media only screen and (max-width: 513px){
-            margin-left: 50px; 
-            margin-top: 20px;   
-        }
-        @media only screen and (min-width: 514px) and (max-width: 960px){
-            margin-left: 70px;
-            margin-bottom: 20px;
-            }
-    }
+   
+   
+.locales-container{
+    background-color: #d6ebf5;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-top:50px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     
-    .parrafo-horario{
-        font-size: nth($font-size, 8);
-        font-weight: nth($font-weight, 1);
-        margin-left: $margin-left;
-        @media only screen and (max-width: 513px){
-            margin-left: 50px; 
+    .titulo-locales{
+        color:white;
+        font-size: 26px;
+        font-weight: 900;
+        letter-spacing:4px;
+        @media only screen and (min-width: 300px) and (max-width: 369px){
+            font-size: 16px;
         }
-        @media only screen and (min-width: 514px) and (max-width: 960px){
-            margin-left: 70px;
-            margin-bottom: 10px;
+        @media only screen and (min-width: 370px) and (max-width: 479px){
+            font-size: 18px;
         }
     }
-    @media only screen and (max-width: 513px){
-        flex-direction: column;
+    .local-item{
+        display: flex;
+        justify-content: start;
+        margin-top:20px;
+        .foto-local{
+            width: 680px;
+            border-radius: 6px 6px 6px 6px;
+            -moz-border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 6px 6px 6px 6px;
+            border: 0px solid #000000;
+            @media only screen and (min-width: 300px) and (max-width: 369px){
+                width: 250px;
+            }
+            @media only screen and (min-width: 370px) and (max-width: 479px){
+                width: 300px;
+            }
+            @media only screen and (min-width: 480px) and (max-width: 599px){
+                width: 400px;
+            }
+            @media only screen and (min-width: 600px) and (max-width: 749px){
+                width: 550px;
+            }
+            @media only screen and (min-width: 750px) and (max-width: 850px){
+                width: 550px;
+            }
+            @media only screen and (min-width: 850px) and (max-width: 999px){
+                width: 650px;
+            }
+            @media only screen and (min-width: 1000px) and (max-width: 1149px){
+                width: 420px;
+            }
+            @media only screen and (min-width: 1150px) and (max-width: 1259px){
+                width: 480px;
+            }
+            @media only screen and (min-width: 1260px) and (max-width: 1390px){
+                width: 580px;
+            }
+        }
+        .mapa{
+            margin-left:50px;
+            width: 480px;
+            border-radius: 6px 6px 6px 6px;
+            -moz-border-radius: 6px 6px 6px 6px;
+            -webkit-border-radius: 6px 6px 6px 6px;
+            border: 0px solid #000000;
+            @media only screen and (min-width: 300px) and (max-width: 369px){
+                width: 250px;
+                margin-left:0px;
+                margin-top:30px;
+            }
+            @media only screen and (min-width: 370px) and (max-width: 479px){
+                width: 300px;
+                margin-left:0px;
+                margin-top:50px;
+            }
+            @media only screen and (min-width: 480px) and (max-width: 599px){
+                width: 400px;
+                margin-left:0px;
+                margin-top:50px;
+            }
+            @media only screen and (min-width: 600px) and (max-width: 749px){
+                width: 550px;
+                margin-left:0px;
+                margin-top:50px;
+            }
+            @media only screen and (min-width: 750px) and (max-width: 849px){
+                width: 450px;
+                margin-left:0px;
+                margin-top:50px;
+            }
+            @media only screen and (min-width: 850px) and (max-width: 999px){
+                width: 650px;
+                margin-left:0px;
+                margin-top:50px;
+            }
+            @media only screen and (min-width: 1000px) and (max-width: 1149px){
+                width: 280px;
+            }
+            @media only screen and (min-width: 1150px) and (max-width: 1259px){
+                width: 320px;
+            }
+            @media only screen and (min-width: 1260px) and (max-width: 1390px){
+                width: 380px;
+            }
+             @media only screen and (min-width: 514px) and (max-width: 999px){
+                flex-direction: column;
+        }
+        }
+        .parrafo-direccion{
+            margin-left:50px; 
+            margin-top:20px;
+            margin-bottom:0px;
+            font-weight: nth($font-weight, 5);
+            font-size: nth($font-size, 3);
+            color: nth($colores, 1);
+            letter-spacing: nth($letter-spacing, 2);
+            @media only screen and (min-width: 300px) and (max-width: 369px){
+                font-size: 12px;
+            }
+            @media only screen and (min-width: 300px) and (max-width: 999px){
+                margin-left:0px;
+                margin-top:30px;
+            }
+        }
+        .parrafo-horario{
+            margin-top:0px;
+            margin-left:50px; 
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 400;
+            letter-spacing: nth($letter-spacing, 1);
+            @media only screen and (min-width: 300px) and (max-width: 369px){
+                font-size: 11px;
+            }
+            @media only screen and (min-width: 300px) and (max-width: 999px){
+                margin-left:0px;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width: 999px){
+            flex-direction: column;
+        }
     }
-    @media only screen and (min-width: 514px) and (max-width: 960px){
-        flex-direction: column;
+    @media only screen and (min-width: 320px) and (max-width: 749px){
+        margin-right:0px;
+        margin-left:0px;
+    }
+    @media only screen and (min-width: 1000px) and (max-width: 1149px){
+        margin-right:160px;
+    }
+    @media only screen and (min-width: 1150px) and (max-width: 1259px){
+        margin-right:160px;
+    }
+    @media only screen and (min-width: 1260px) and (max-width: 1390px){
+        margin-right: 180px;
     }
 }
-
 
 
 

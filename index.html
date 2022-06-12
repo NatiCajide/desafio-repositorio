@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="YKRA es una empresa familiar de mochilas y bolsos que fue fundada por el diseñador Balázs Lakatos en el sótano de un bar de Budapest en 2011. Fabricamos productos de calidad, duraderos y sustentables, que tienen el aspecto y la sensación de una era pasada. Utilizamos materia prima reciclada y lienzos de algodón duradero.">
     <meta name="Keywords" content="Mochilas, bolsos, accesorios, productos sustentables, cuidado del planeta, materiales reciclables, lienzo de algodón, estampados, tiempo libre, camping, aventuras">
     <link rel="shortcut icon" href="./assets/imagenes/logo-ykra.ico" type="image/x-icon">
@@ -17,32 +17,9 @@
 </head>
 <body>
     <header>
-        <!-------NavBar MOBILE Bootstrap------>
-        <nav class="navbar navbar-expand-lg bg-light navbar-bootstrap">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">HOME</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./paginas/shop.html">SHOP</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./paginas/locales.html">LOCALES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./paginas/quienes-somos.html">QUIENES SOMOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./paginas/contacto.html">CONTACTO</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        <!------------Comienzo del Header--------->
+        <!------- NavBar MOBILE Bootstrap ------>
+    
+        <!------------ Comienzo del Header --------->
         <section class="header-contenedor">
             <div>
                 <a href="https://www.facebook.com/ykraclothing" target="_blank">
@@ -61,14 +38,14 @@
                 <img src="./assets/imagenes/lupa.png" class="elementos-encabezado" alt="Lupa/Buscador">
             </div>
         </section>
-        <!------------Comienzo del Nav--------->
+        <!------------ Comienzo del Nav --------->
         <nav>
             <ul class="nav-menu">
                 <div class="titulo-mobile">Envíos gratis a todo el país</div>
-                <li class="color-menu">Home</li>
+                <li class="color-menu">Home</li>  
                 <li>
                     <a href="./paginas/shop.html" class="color-menu">Shop</a>
-                </li>  
+                </li>
                 <li>
                     <a href="./paginas/locales.html" class="color-menu">Locales</a>
                 </li>
@@ -82,7 +59,7 @@
         </nav>
     </header>
     <main>
-        <!------------Carrusel de imágenes---------> 
+        <!------------ Carrusel de imágenes ---------> 
         <section>
             <div class="deslizador">
                 <ul class="carrusel">
@@ -101,7 +78,7 @@
                 </ul>
             </div>
         </section>
-        <!------------Carrusel de imágenes VISTA MOBILE---------> 
+        <!------------ Carrusel de imágenes VISTA MOBILE ---------> 
         <section>
             <div class="deslizador-mobile">
                 <ul class="carrusel">
@@ -120,50 +97,50 @@
                 </ul>
             </div>
         </section>
-        <!-----------Sección Shop + Destacado--------->
-         <section class="grid-container">
-            <div Class="primer-item">
-                <a href="./paginas/shop.html">
-                    <img src="./assets/imagenes/acceso-shop.png" alt="Shop YKRA">
-                </a>
-            </div>
-            <div Class="segundo-item">
-                <h1 class="titulo-item">PRODUCTOS SUSTENTABLES</h1>
-                <p class="parrafo-segundo-item">Fabricados éticamente a partir de materiales naturales de origen local.</p>
-            </div>
-            <div Class="tercer-item">
-                <a href="./paginas/sale.html">
-                    <img src="./assets/imagenes/acceso-sale.png" alt="Sale YKRA">
-                </a>
-            </div>
-            <div Class="cuarto-item">
-                <p>La combinación de materiales de alta calidad y la atención al detalle dan como resultado productos duraderos que envejecen maravillosamente. Somos una empresa responsable: reparamos cualquier producto que tenga defectos de materiales o de mano de obra.</p>
-            </div>
-        </section>
-        <!--------------Colección-------------> 
-        <section class="contenedor-1">
-            <div>
-                <img src="./assets/imagenes/section-1b.jpg" alt="Dupla de productos">
-            </div>
-            <div class="contenedor-parrafo-1">
-                <p class="subtitulo-coleccion-1">EDICIONES LIMITADAS</p>
-                <p class="titulo-coleccion-1">NUEVA COLECCIÓN DE ESTAMPADOS SERIGRAFIADOS</p>
-                <p class="parrafo-coleccion-1">YKRA es conocida por sus colecciones únicas de edición limitada. A lo largo de los años, hemos colaborado con los diseñadores de moda Henrik Vibskov, LF Markey y Tomcsanyi, y marcas populares como Bobochoses y Maisonette.</p>
+         <!------------ GRILLA Shop + Sale ------------->
+         <section>
+            <div class="grid-container">
+                <div class="grid-item item-imagen-1">
+                    <a href="./paginas/shop.html">
+                    <img src="./assets/imagenes/acceso-shop.png" class="item-imagen" alt="Acceso directo al Shop Ykra">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <p class="grid-tittle">PRODUCTOS SUSTENTABLES</p>
+                    <p class="grid-subtittle">Fabricados éticamente a partir de materiales naturales de origen local.</p>
+                </div>
+                <div class="grid-item">
+                    <p class="grid-paragraphe">La combinación de materiales de alta calidad y la atención al detalle dan como resultado productos duraderos que envejecen maravillosamente. Somos una empresa responsable: reparamos cualquier producto que tenga defectos de mano de obra. Estamos convencidos del futuro de nuestro planeta y de nuestro impacto en el medio ambiente.</p>
+                </div>
+                <div class="grid-item item-imagen-2">
+                    <a href="./paginas/sale.html">
+                    <img src="./assets/imagenes/acceso-sale.png" class="item-imagen" alt="Acceso directo al Sale Ykra">
+                    </a>
+                </div>
             </div>
         </section>
-        <section class="contenedor-2">
-            <div class="contenedor-parrafo-2">
-                <p class="subtitulo-coleccion-2">MATERIALES NATURALES</p>
-                <p class="titulo-coleccion-2"> SOMOS UNA EMPRESA RESPONSABLE</p>
-                <p class="parrafo-coleccion-2">Utilizamos materiales naturales que se descompondrán al final de su ciclo de vida, sin dañar el planeta. Obtenemos cuero de alta calidad de Italia, lona de algodón de la República Checa, y nuestros accesorios y correas de metal se fabrican en Hungría.</p>
-            </div>
-            <div>
-                <img src="./assets/imagenes/section-1a.jpg" class="par-imagen" alt="Dupla de productos">
-            </div>
-        </section>
-         <!--------------Categoría de Productos-------------> 
+         <!------------ GRILLA Colección de Productos --------->
+      <section class="grilla-coleccion">
+        <div class="grid-item-coleccion" >
+            <img src="./assets/imagenes/section-1c.jpg" class="grilla-imagen-1" alt="Dupla de productos">
+        </div>
+        <div class="grid-item-coleccion grid-item-parrafos">
+            <p class="subtitulo-coleccion-1">EDICIONES LIMITADAS</p>
+            <p class="titulo-coleccion-1">NUEVA COLECCIÓN DE ESTAMPADOS SERIGRAFIADOS</p>
+            <p class="parrafo-coleccion-1">YKRA es conocida por sus colecciones únicas de edición limitada. A lo largo de los años, hemos colaborado con los diseñadores de moda Henrik Vibskov, LF Markey y Tomcsanyi, y marcas populares como Bobochoses y Maisonette.</p>
+        </div>
+        <div class="grid-item-coleccion grid-item-parrafos">
+            <p class="subtitulo-coleccion-1">MATERIALES NATURALES</p>
+            <p class="titulo-coleccion-1"> SOMOS UNA EMPRESA RESPONSABLE</p>
+            <p class="parrafo-coleccion-1">Utilizamos materiales naturales que se descompondrán al final de su ciclo de vida, sin dañar el planeta. Obtenemos cuero de alta calidad de Italia, lona de algodón de la República Checa, y nuestros accesorios y correas de metal se fabrican en Hungría.</p>
+        </div>
+        <div class="grid-item-coleccion">
+            <img src="./assets/imagenes/section-1d.jpg" class="grilla-imagen-2" alt="Dupla de productos">
+        </div>
+    </section>
+         <!-------------- Categoría de Productos -------------> 
         <section>  
-            <div>
+            <div class="categoria-productos-texto">
                 <p class="categoria-productos-subtitulo">COLECCIÓN OTOÑO / INVIERNO 2022</p>
                 <p class="categoria-productos-titulo">CATEGORÍA DE PRODUCTOS</p>
             </div>
@@ -185,7 +162,7 @@
                 </a>
             </div>
         </section>
-        <!------------Categoría de Productos - Bootstrap para MOBILE---------> 
+        <!------------ Categoría de Productos - Bootstrap para MOBILE ---------> 
       <div id="carouselExampleControls" class="carousel slide carrousel-bootstrap" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -212,7 +189,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-        <!--------------Nuevos Ingresos------------->
+        <!-------------------- Nuevos Ingresos ----------------->
         <section class="contenedor-titulo">
                 <h4>NUEVOS INGRESOS</h4>
         </section>
@@ -246,7 +223,7 @@
                     </a>
                 </div>
         </section>
-          <!------------Carrusel de Instagram------------->
+          <!---------------- Carrusel de Instagram ---------------->
           <section class="carrusel-instagram">
             <div class="carrusel-titulo">
                 <p>SEGUINOS EN INSTAGRAM @Ykra</p>
@@ -304,7 +281,7 @@
             <a href="./paginas/contacto.html" class="suscribirse-boton">Suscribirse</a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
