@@ -1110,10 +1110,35 @@
   }
 }
 
-.contenedor-imagenes-dos {
+.subtitulo-de-contenedor {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 3px;
   margin-top: 100px;
+  margin-bottom: 0px;
+  padding-top: 70px;
+  padding-bottom: 7px;
+  text-align: center;
   background-color: #fb873a;
-  padding: 100px;
+}
+
+.titulo-de-contenedor {
+  font-weight: 800;
+  font-size: 25px;
+  color: #BF2626;
+  letter-spacing: 3px;
+  margin-bottom: 0px;
+  text-align: center;
+  background-color: #fb873a;
+}
+
+.contenedor-imagenes-dos {
+  background-color: #fb873a;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 .contenedor-imagenes-dos img {
   width: 350px;
